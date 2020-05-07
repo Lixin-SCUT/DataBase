@@ -69,16 +69,16 @@ ORDER BY Score DESC;
 然后重点在于条件WHERE b.Score >= a.Score和聚集函数COUNT(DISTINCT b.Score) 的配合
 
 相关知识点：
-《MySQL必知必会》
-**使用WHERE子句**
-只检索所需数据需要 指定搜索条件(search criteria)，搜索条件也称为过滤条件(filter condition)。
-在SELECT语句中，数据根据WHERE子句中指定的搜索条件进行过滤。 WHERE子句在表名(FROM子句)之后给出
-WHERE子句的位置：在同时使用ORDERBY和WHERE子句时，应 该让ORDER BY位于WHERE之后，否则将会产生错误
-WHERE子句的等于是 = 而不是 ==
+《MySQL必知必会》       
+**使用WHERE子句**                 
+只检索所需数据需要 指定搜索条件(search criteria)，搜索条件也称为过滤条件(filter condition)。       
+在SELECT语句中，数据根据WHERE子句中指定的搜索条件进行过滤。 WHERE子句在表名(FROM子句)之后给出         
+WHERE子句的位置：在同时使用ORDERBY和WHERE子句时，应 该让ORDER BY位于WHERE之后，否则将会产生错误          
+WHERE子句的等于是 = 而不是 ==      
 
-**COUNT()函数**
-COUNT()函数进行计数。可利用COUNT()确定表中行的数目或符合特定条件的行的数目。
-COUNT()函数有两种使用方式。
-  使用COUNT(\*)对表中行的数目进行计数，不管表列中包含的是空 值(NULL)还是非空值。
-  使用COUNT(column)对特定列中具有值的行进行计数，忽略 NULL值。
-NULL值：如果指定列名，则指定列的值为空的行被COUNT() 函数忽略，但如果COUNT()函数中用的是星号(\*)，则不忽 略。
+**COUNT()函数**         
+COUNT()函数进行计数。可利用COUNT()确定表中行的数目或符合特定条件的行的数目。            
+COUNT()函数有两种使用方式。          
+  使用COUNT(\*)对表中行的数目进行计数，不管表列中包含的是空 值(NULL)还是非空值。       
+  使用COUNT(column)对特定列中具有值的行进行计数，忽略 NULL值。         
+NULL值：如果指定列名，则指定列的值为空的行被COUNT() 函数忽略，但如果COUNT()函数中用的是星号(\*)，则不忽 略。     
